@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Fizz Buzz Refactor</title>
+</head>
+<body>
+	<div class="main-div">
+		<h1>Fizz Buzz Part 2</h1>
+	</div>
+<script src="http://code.jquery.com/jquery.min.js"></script>
+	<script type="text/javascript">
+
+var p = prompt("Enter a number");
+var n = parseInt(p);
+console.log(n);
+
+function fizzbuzzit() {
+	if (n === NaN) {
+		alert('Please Enter a valid number');
+	}
+	else  { $(".main-div").append(function() {
+	for (var Number = 1; Number < n; Number++) {
+	if (((Number % 3)+(Number % 5)) == 0) {$(".main-div").append(" Fizz-Buzz ");}
+	else if (Number % 3 == 0) {$(".main-div").append(" Fizz ");}
+	else if (Number % 5 == 0) {$(".main-div").append(" Buzz ");}
+	else {$(".main-div").append(Number+" ");}
+	}
+	});
+}
+
+}
+
+fizzbuzzit();
+
+	</script>
+</body>
+</html>
